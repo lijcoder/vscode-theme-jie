@@ -10,10 +10,7 @@
 			"type": "extensionHost",
 			"request": "launch",
 			"args": [
-				"--profile",
-				"Java",
-				"--extensionDevelopmentPath=${workspaceFolder}",
-				"/Users/lijie/work/code/sandbox-paas",
+				"--extensionDevelopmentPath=${workspaceFolder}"
 			]
 		}
 	]

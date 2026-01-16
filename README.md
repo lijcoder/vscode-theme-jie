@@ -1,4 +1,5 @@
-# Jie-theme README
+# vscode-theme-jie
+An eye-friendly theme designed for long coding sessions
 
 ## Working with Markdown
 
