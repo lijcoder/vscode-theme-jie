@@ -1,0 +1,82 @@
+{
+	"name": "LiJie",
+	"colors": {
+		"editor.background": "#f5f5f5",
+		"editor.foreground": "#333333",
+		"list.activeSelectionIconForeground": "#fff",
+		"editorBracketHighlight.foreground1": "#333333",
+		"editorBracketHighlight.foreground2": "#333333",
+		"editorBracketHighlight.foreground3": "#333333",
+		"editorBracketHighlight.foreground4": "#333333",
+		"editorBracketHighlight.foreground5": "#333333",
+		"editorBracketHighlight.foreground6": "#333333",
+		"editorBracketHighlight.unexpectedBracket.foreground": "#A31515",
+	},
+	"semanticHighlighting": true,
+	"semanticTokenColors": {
+		"variable": "#000082",
+		"parameter": {
+			"foreground": "#000082",
+			"underline": true
+		},
+		"property": {
+			"foreground": "#000082",
+			"italic": true,
+		},
+		"method.declaration": "#0000FF",
+		"property.static": {
+			"fontStyle": "bold"
+		},
+		"keyword.documentation": {
+			"foreground": "#000000"
+		},
+		"enum.declaration": "#0000FF",
+		"enumMember": {
+			"foreground": "#888888",
+			"fontStyle": "italic",
+		},
+	},
+	"tokenColors": [
+		{
+			"name": "Comments",
+			"scope": [
+				"comment",
+				"punctuation.definition.comment",
+				"comment.block.preprocessor",
+				"comment.documentation",
+				"comment.block.documentation"
+			],
+			"settings": {
+				"foreground": "#888888"
+			}
+		},
+		{
+			"name": "Annotation",
+			"scope": [
+				"punctuation.definition.annotation",
+				"storage.type.annotation",
+			],
+			"settings": {
+				"foreground": "#906f2c"
+			}
+		},
+		{
+			"name": "Annotation",
+			"scope": [
+				"string.quoted.double",
+			],
+			"settings": {
+				"foreground": "#888888"
+			}
+		},
+		{
+			"name": "This",
+			"scope": [
+				"variable.language.this",
+			],
+			"settings": {
+				"foreground": "#888888"
+			}
+		}
+	]
+}

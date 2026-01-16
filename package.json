@@ -1,0 +1,26 @@
+{
+  "name": "vscode-theme-jie",
+  "displayName": "vscode theme Jie",
+  "description": "An eye-friendly theme designed for long coding sessions",
+  "version": "0.0.1",
+  "publisher": "lijcoder",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lijcoder/vscode-theme-jie"
+  },
+  "engines": {
+    "vscode": "^1.108.1"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Jie Light",
+        "uiTheme": "vs",
+        "path": "./themes/Jie-color-theme.json"
+      }
+    ]
+  }
+}
