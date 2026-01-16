@@ -3,7 +3,7 @@
 	"colors": {
 		"editor.background": "#1E1F22",
 		"editor.foreground": "#6f737a",
-		"sideBar.background": "#2B2D30",
+		"sideBar.background": "#1E1F21",
 		"editor.lineHighlightBackground": "#26282D",
 		"editorBracketHighlight.foreground1": "#6f737a",
 		"editorBracketHighlight.foreground2": "#6f737a",
