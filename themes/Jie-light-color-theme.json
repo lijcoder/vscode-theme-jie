@@ -1,5 +1,5 @@
 {
-	"name": "LiJie",
+	"name": "JieLight",
 	"colors": {
 		"editor.background": "#F3F3F3",
 		"editor.foreground": "#333333",
@@ -24,6 +24,7 @@
 			"foreground": "#871094",
 		},
 		"method.declaration": "#0000FF",
+		"function.declaration": "#0000FF",
 		"property.static": {
 			"fontStyle": "bold"
 		},

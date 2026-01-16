@@ -20,7 +20,12 @@
       {
         "label": "Jie Light",
         "uiTheme": "vs",
-        "path": "./themes/Jie-color-theme.json"
+        "path": "./themes/Jie-light-color-theme.json"
+      },
+      {
+        "label": "Jie Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Jie-dark-color-theme.json"
       }
     ],
     "languages": [
