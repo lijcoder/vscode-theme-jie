@@ -1,7 +1,7 @@
 {
 	"name": "LiJie",
 	"colors": {
-		"editor.background": "#f5f5f5",
+		"editor.background": "#ffffff",
 		"editor.foreground": "#333333",
 		"list.activeSelectionIconForeground": "#fff",
 		"editorBracketHighlight.foreground1": "#333333",
@@ -20,8 +20,7 @@
 			"underline": true
 		},
 		"property": {
-			"foreground": "#000082",
-			"italic": true,
+			"foreground": "#871094",
 		},
 		"method.declaration": "#0000FF",
 		"property.static": {
@@ -37,6 +36,12 @@
 		},
 	},
 	"tokenColors": [
+		// 注解
+		// 类、抽象类、接口
+		// 构造方法、普通方法（私有、保护、公开、默认）、静态方法
+		// 实例变量、类变量
+		// 构造方法参数、方法参数、静态方法参数
+		// 方法内变量
 		{
 			"name": "Comments",
 			"scope": [
@@ -57,11 +62,11 @@
 				"storage.type.annotation",
 			],
 			"settings": {
-				"foreground": "#906f2c"
+				"foreground": "#9e880d"
 			}
 		},
 		{
-			"name": "Annotation",
+			"name": "String",
 			"scope": [
 				"string.quoted.double",
 			],

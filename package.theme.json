@@ -12,8 +12,7 @@
     "vscode": "^1.108.1"
   },
   "categories": [
-    "Themes",
-    "Programming Languages"
+    "Themes"
   ],
   "contributes": {
     "themes": [
@@ -22,17 +21,6 @@
         "uiTheme": "vs",
         "path": "./themes/Jie-color-theme.json"
       }
-    ],
-    "languages": [{
-      "id": "java",
-      "aliases": ["java", "java"],
-      "extensions": [".java"],
-      "configuration": "./syntaxes/language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "java",
-      "scopeName": "source.java",
-      "path": "./syntaxes/java.tmLanguage"
-    }]
+    ]
   }
 }
