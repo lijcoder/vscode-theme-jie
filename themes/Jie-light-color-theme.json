@@ -70,6 +70,7 @@
 			"name": "Annotation",
 			"scope": [
 				"storage.type.annotation.java",
+				"punctuation.definition.annotation.java",
 			],
 			"settings": {
 				"foreground": "#9e880d"
