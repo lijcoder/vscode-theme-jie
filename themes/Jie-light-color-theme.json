@@ -1,9 +1,13 @@
 {
 	"name": "JieLight",
 	"colors": {
+		"sideBar.background": "#EEEEEE",
+		"activityBar.background": "#EEEEEE",
+		"activityBar.foreground": "#000000",
+		"activityBar.border": "#cbcbcb",
+		// editor
 		"editor.background": "#F3F3F3",
 		"editor.foreground": "#333333",
-		"sideBar.background": "#EEEEEE",
 		"editor.lineHighlightBackground": "#FFFFFF",
 		"editorBracketHighlight.foreground1": "#333333",
 		"editorBracketHighlight.foreground2": "#333333",
@@ -38,6 +42,15 @@
 		},
 	},
 	"tokenColors": [
+		{
+			"name": "GenrealComments",
+			"scope": [
+				"comment",
+			],
+			"settings": {
+				"foreground": "#888888",
+			}
+		},
 		// java
 		// 注解
 		// 类、抽象类、接口
@@ -98,6 +111,124 @@
 			],
 			"settings": {
 				"foreground": "#5C6B7C"
+			}
+		},
+		// java properties
+		{
+			"name": "Comments",
+			"scope": [
+				"comment.line.java-properties",
+			],
+			"settings": {
+				"foreground": "#888888",
+			}
+		},
+		{
+			"name": "Variable",
+			"scope": [
+				"support.constant.java-properties"
+			],
+			"settings": {
+				"foreground": "#0133B3",
+			}
+		},
+		{
+			"name": "String",
+			"scope": [
+				"string.unquoted.java-properties",
+			],
+			"settings": {
+				"foreground": "#333333"
+			}
+		},
+		// ini
+		{
+			"name": "Comments",
+			"scope": [
+				"comment.line.semicolon.ini",
+				"comment.line.number-sign.ini",
+			],
+			"settings": {
+				"foreground": "#888888",
+			}
+		},
+		{
+			"name": "Group",
+			"scope": [
+				"entity.name.section.group-title.ini"
+			],
+			"settings": {
+				"foreground": "#9e880d",
+			}
+		},
+		{
+			"name": "Variable",
+			"scope": [
+				"keyword.other.definition.ini"
+			],
+			"settings": {
+				"foreground": "#0133B3",
+			}
+		},
+		{
+			"name": "String",
+			"scope": [
+				"string.quoted.double.ini",
+			],
+			"settings": {
+				"foreground": "#333333"
+			}
+		},
+		// XML
+		{
+			"name": "Comments",
+			"scope": [
+				"comment.block.xml",
+			],
+			"settings": {
+				"foreground": "#888888",
+			}
+		},
+		{
+			"name": "Tag",
+			"scope": [
+				"entity.name.tag.localname.xml",
+				"punctuation.definition.tag.xml",
+				"entity.name.tag.namespace.xml",
+			],
+			"settings": {
+				"foreground": "#0133b3",
+			}
+		},
+		{
+			"name": "Variable",
+			"scope": [
+				"entity.other.attribute-name.localname.xml",
+				"entity.other.attribute-name.namespace.xml",
+				
+			],
+			"settings": {
+				"foreground": "#174ad4",
+			}
+		},
+		// python
+		{
+			"name": "KeywordControl",
+			"scope": [
+				"keyword.control.flow.python",
+			],
+			"settings": {
+				"fontStyle": "italic",
+			}
+		},
+		{
+			"name": "Annotation",
+			"scope": [
+				"entity.name.function.decorator.python",
+				"meta.function.decorator.python",
+			],
+			"settings": {
+				"foreground": "#9e880d"
 			}
 		},
 	]
