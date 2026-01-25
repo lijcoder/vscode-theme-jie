@@ -1,6 +1,7 @@
 {
 	"name": "light-hight",
 	"colors": {
+		"editor.background": "#FFFFFF",
 		"editor.foreground": "#333333",
 		"editor.lineHighlightBackground": "#EEEEEE",
 		"editorBracketHighlight.foreground1": "#333333",
