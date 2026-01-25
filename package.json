@@ -20,12 +20,17 @@
       {
         "label": "Jie Light",
         "uiTheme": "vs",
-        "path": "./themes/Jie-light-color-theme.json"
+        "path": "./themes/light-color-theme.json"
+      },
+      {
+        "label": "Jie Light High",
+        "uiTheme": "vs",
+        "path": "./themes/light-hight-color-theme.json"
       },
       {
         "label": "Jie Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/Jie-dark-color-theme.json"
+        "path": "./themes/dark-color-theme.json"
       }
     ],
     "languages": [
@@ -48,5 +53,19 @@
         "path": "./syntaxes/java.tmLanguage"
       }
     ]
+  },
+  "scripts": {
+    "build": "tsx src/build.ts",
+    "watch:theme": "tsx src/watch.ts",
+    "dev": "npm run build && npm run watch:theme",
+    "vsce:package": "npx vsce package",
+    "vsce:publish:patch": "npx vsce publish patch"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.9",
+    "typescript": "^5.9.3",
+    "chokidar": "^4.0.3",
+    "@types/chokidar": "^2.1.3",
+    "tsx": "^4.20.3"
   }
 }
