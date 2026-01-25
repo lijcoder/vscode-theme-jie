@@ -1,7 +1,14 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import { LanguageTokenColorBuilder, ThemeColors, TokenColor, LanguageTokenColorBuilderFactory, ThemeColorFactory } from './struct';
-import { buildEditorWorkerbenchColors, buildEditorSemanticTokenColors } from './editor/general-color';
+import { 
+    TokenColor, LanguageTokenColorBuilder, LanguageTokenColorBuilderFactory,
+    ThemeColors, ThemeColorFactory
+} from './struct';
+import { 
+    buildEditorWorkerbenchColors, 
+    buildEditorSemanticTokenColors,
+    buildEditorGeneralTokenColors,
+} from './editor/general-color';
 import * as LanguageTokenColorBuilderList from './editor';
 import * as ThemeList from './theme';
 
@@ -66,7 +73,9 @@ export class ThemeBuilder {
         const editorWorkerBenchColors = buildEditorWorkerbenchColors(theme);
         const workbenchColors = { ...theme.workbenchColors, ...editorWorkerBenchColors };
         const semanticTokenColors = buildEditorSemanticTokenColors(theme);
-        const tokenColors: TokenColor[] = this.buildLanguageTokenColors(theme);
+        const generalTokenColors: TokenColor[] = buildEditorGeneralTokenColors(theme);
+        const languageTokenColors: TokenColor[] = this.buildLanguageTokenColors(theme);
+        const tokenColors = [...generalTokenColors, ...languageTokenColors];
         const themeConfig = {
             name: theme.name,
             colors: workbenchColors,

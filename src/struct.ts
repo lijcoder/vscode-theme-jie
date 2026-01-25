@@ -1,8 +1,7 @@
 
-export enum ThemeType {
+enum ThemeType {
     Dark = 'dark',
     Light = 'light',
-    HighContrast = 'high-contrast'
 }
 
 /**
@@ -70,58 +69,63 @@ interface LanguageTokenColorBuilder {
 }
 
 class LanguageTokenColorBuilderFactory {
-    private static builders: Map<string, LanguageTokenColorBuilder> = new Map();
+    private static builders: Array<LanguageTokenColorBuilder> = [];
     
     public static register(builder: LanguageTokenColorBuilder): void {
-        if (this.builders.has(builder.language)) {
-            console.warn(`warn: register language token color fail. cause ${builder.language} exists`);
-        } else {
-            console.info(`info: register language token color success. language ${builder.language}`);
-            this.builders.set(builder.language, builder);
+        for (const item of this.builders) {
+            if (item.language === builder.language) {
+                console.warn(`warn: register language token color fail. cause ${builder.language} exists`);
+                return;
+            }
         }
+        console.info(`info: register language token color success. language ${builder.language}`);
+        this.builders.push(builder);
     }
     
     public static getAllBuilders(): LanguageTokenColorBuilder[] {
-        const instances: LanguageTokenColorBuilder[] = [];
-        for (const builder of this.builders.values()) {
-            instances.push(builder);
-        }
-        return instances;
+        return this.builders;
     }
     
     public static getBuilder(language: string): LanguageTokenColorBuilder | undefined {
-        const builder = this.builders.get(language);
-        return builder;
+        for (const item of this.builders) {
+            if (item.language === language) {
+                return item;
+            }
+        }
+        return undefined;
     }
 }
 
 class ThemeColorFactory {
-    private static themes: Map<string, ThemeColors> = new Map();
+    private static themes: Array<ThemeColors> = [];
     
     public static register(theme: ThemeColors): void {
-        if (this.themes.has(theme.name)) {
-            console.warn(`warn: register theme fail. cause ${theme.name} exists`);
-        } else {
-            console.info(`info: register theme success. theme ${theme.name}`);
-            this.themes.set(theme.name, theme);
+        for (const item of this.themes) {
+            if (item.name === theme.name) {
+                console.warn(`warn: register theme fail. cause ${theme.name} exists`);
+                return;
+            }
         }
+        console.info(`info: register theme success. theme ${theme.name}`);
+        this.themes.push(theme);
     }
 
     public static getAllThemes(): ThemeColors[] {
-        const instances: ThemeColors[] = [];
-        for (const theme of this.themes.values()) {
-            instances.push(theme);
-        }
-        return instances;
+        return this.themes;
     }
 
     public static getTheme(name: string): ThemeColors | undefined {
-        const theme = this.themes.get(name);
-        return theme;
+        for (const item of this.themes) {
+            if (item.name === name) {
+                return item;
+            }
+        }
+        return undefined;
     }
 }
 
 export {
+    ThemeType,
     WorkbenchColors,
     EditColors,
     Style,

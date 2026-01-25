@@ -1,4 +1,4 @@
-import { Style, ThemeColors } from "../struct";
+import { Style, ThemeColors, TokenColor } from "../struct";
 
 export function buildEditorWorkerbenchColors(theme: ThemeColors): { [key: string]: string | undefined } {
     return {
@@ -27,4 +27,16 @@ export function buildEditorSemanticTokenColors(theme: ThemeColors): { [key: stri
 		"enum.declaration": theme.editColors.function,
 		"enumMember": theme.editColors.enumMember,
     }
+}
+
+export function buildEditorGeneralTokenColors(theme: ThemeColors): TokenColor[] {
+    return [
+		{
+			"name": "GeneralComment",
+			"scope": [
+				"comment"
+			],
+			"settings": theme.editColors.comments,
+		}
+	];
 }
