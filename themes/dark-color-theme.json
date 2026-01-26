@@ -60,6 +60,23 @@
 		},
 		{
 			"scope": [
+				"string.quoted.double.go",
+				"string.quoted.raw.go"
+			],
+			"settings": {
+				"foreground": "#888888"
+			}
+		},
+		{
+			"scope": [
+				"keyword.control.go"
+			],
+			"settings": {
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"scope": [
 				"comment.line.semicolon.ini",
 				"comment.line.number-sign.ini"
 			],
@@ -169,6 +186,24 @@
 			"scope": [
 				"string.quoted.double.java",
 				"string.quoted.single.java"
+			],
+			"settings": {
+				"foreground": "#888888"
+			}
+		},
+		{
+			"scope": [
+				"support.type.property-name.json"
+			],
+			"settings": {
+				"foreground": "#999999"
+			}
+		},
+		{
+			"scope": [
+				"string.quoted.double.json",
+				"constant.numeric.json",
+				"constant.language.json"
 			],
 			"settings": {
 				"foreground": "#888888"
