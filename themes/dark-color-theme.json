@@ -271,6 +271,15 @@
 			"settings": {
 				"foreground": "#999999"
 			}
+		},
+		{
+			"name": "String",
+			"scope": [
+				"string.quoted.double.xml"
+			],
+			"settings": {
+				"foreground": "#888888"
+			}
 		}
 	]
 }

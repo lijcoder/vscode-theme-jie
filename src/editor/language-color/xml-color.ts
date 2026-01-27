@@ -33,6 +33,13 @@ export class XmlTokenColorBuilder implements LanguageTokenColorBuilder {
 			],
 			"settings": theme.variable,
 		},
+		{
+			"name": "String",
+			"scope": [
+				"string.quoted.double.xml",
+			],
+			"settings": theme.string,
+		}
     ];
   }
 }
