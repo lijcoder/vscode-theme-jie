@@ -21,6 +21,12 @@ export class PythonTokenColorBuilder implements LanguageTokenColorBuilder {
 			],
 			"settings": theme.annotation,
 		},
+		{
+			"scope": [
+				"string.quoted.single.python",
+			],
+			"settings": theme.string,
+		},
     ];
   }
 }

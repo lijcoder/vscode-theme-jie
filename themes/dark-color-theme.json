@@ -228,6 +228,14 @@
 		},
 		{
 			"scope": [
+				"string.quoted.single.python"
+			],
+			"settings": {
+				"foreground": "#888888"
+			}
+		},
+		{
+			"scope": [
 				"keyword.control.flow.ts"
 			],
 			"settings": {

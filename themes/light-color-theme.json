@@ -229,6 +229,14 @@
 		},
 		{
 			"scope": [
+				"string.quoted.single.python"
+			],
+			"settings": {
+				"foreground": "#5C6B7C"
+			}
+		},
+		{
+			"scope": [
 				"keyword.control.flow.ts"
 			],
 			"settings": {
