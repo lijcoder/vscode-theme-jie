@@ -3,6 +3,7 @@
   "displayName": "vscode theme Jie",
   "description": "An eye-friendly theme designed for long coding sessions",
   "version": "0.0.18",
+  "icon": "icon.png",
   "publisher": "lijcoder",
   "repository": {
     "type": "git",
